@@ -1,7 +1,7 @@
 package DSA_problems.LinkedList;
 
 import java.util.HashSet;
-
+// cycle detection in LinkedList
 public class CycleDetect {
     public static void main(String[] args) {
         CycleDetect c=new CycleDetect();
@@ -25,6 +25,8 @@ public class CycleDetect {
             if(visited.contains(head)){
                 return true;
             }
+
+
             visited.add(head);
             head=head.next;
         }
